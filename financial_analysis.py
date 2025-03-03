@@ -98,12 +98,8 @@ def load_documents(chunk_document=True): # Added chunk_document parameter to con
 # Compliance check function
 def get_compliance_chain():
     prompt_template = """
-    You are an AI compliance model for the 2 documents provided in the context which are sebi s' dcoument , your role is to analyse the user s' work in detail based on the regulation document provided in the context.
-    Follow these steps:
-    1. Please ignore the place holders in the document they are for later use and are not errors
-    2. Focus primarily on factual inconsistencies, numerical mismatches, and compliance errors, even if the text appears grammatically correct. Ignore minor typographical and formatting issues unless they impact meaning. 
-    3. Check if ICDR regulation 6 is present 
-    
+    You are an AI finacial analysis model for the documents provided in the context which are financial academic dcoument , your role is to analyse the user s' queries and asnwer based on the document provided in the context.
+        
     Context (Document):\n {context} \n
     User Submission:\n {submission} \n
 
@@ -146,8 +142,8 @@ def check_compliance(user_submission):
 
 # Function to run the chatbot
 def run_chatbot():
-    print("Welcome to the Compliance Chatbot! ")
-    print("I am ready to check your submissions against the loaded regulatory documents.")
+    print("Welcome to the Financial analysis Chatbot! ")
+    print("I am ready to check your submissions against the loaded documents.")
     print("Type 'exit' or 'quit' to end the chat.")
 
     while True:
