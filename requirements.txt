@@ -1,0 +1,12 @@
+langchain_community.vectorstores 
+langchain.prompts 
+os
+PyPDF2 
+requests
+bs4 
+google.generativeai 
+langchain.text_splitter 
+langchain_google_genai 
+langchain_google_genai 
+langchain.chains.question_answering 
+io 
