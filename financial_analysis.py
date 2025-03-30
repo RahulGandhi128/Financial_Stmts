@@ -12,8 +12,8 @@ from langchain.chains.question_answering import load_qa_chain
 from io import BytesIO
 
 # Set Google API key
-os.environ["GOOGLE_API_KEY"] = 'Add your gemini api key'
-google_api_key = os.getenv("GOOGLE_API_KEY")
+google_api_key = "AIzaSyCcUFY04YwiLbCdYFvjXzWg-ze0LOtYKmY"
+
 
 # Function to extract text from a PDF file
 def extract_text_from_pdf(pdf_file):
